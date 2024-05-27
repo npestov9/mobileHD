@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:textColor="@color/primary_text"
+    android:textSize="16sp"
+    android:background="@android:color/transparent"
+    android:minHeight="48dp"
+    android:gravity="start|center_vertical" />

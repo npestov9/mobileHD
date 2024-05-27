@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Cook Master"
+            android:textSize="24sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/profileicon"
+            android:contentDescription="Profile" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/whatCanIMakeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What Can I Make?"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/button_text"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/promptRecipeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prompt a Recipe"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/button_text"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/randomRecipeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#A776FF"
+        android:text="Feeling Lucky"
+        android:textColor="@color/button_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/fridgeListButton"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerInside"
+                android:src="@drawable/fridgeicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fridge"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/groceryListButton"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerInside"
+                android:src="@drawable/shoppingicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopping List"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

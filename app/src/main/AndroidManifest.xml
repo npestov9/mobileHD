@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CookAI">
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.client_id"
+            android:value="934533305030-b6vgbbbnlkjukp4n7so10a27hq73dcp7.apps.googleusercontent.com" />
+
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Fridge Activity -->
+        <activity android:name=".FridgeActivity" />
+
+        <activity android:name=".HomeActivity"/>
+
+        <!-- Grocery Activity -->
+        <activity android:name=".GroceryActivity" />
+
+        <activity android:name=".ChatActivity" />
+
+        <activity android:name=".ProfileActivity" />
+
+        <activity android:name=".RecipePromptActivity" />
+    </application>
+
+</manifest>

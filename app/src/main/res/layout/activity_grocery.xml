@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".GroceryActivity">
+
+    <TextView
+        android:id="@+id/groceryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery List"
+        android:textSize="24sp"
+        android:textColor="@color/primary_text"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <ListView
+        android:id="@+id/groceryListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <EditText
+            android:id="@+id/ingredientEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Add new ingredient"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/primary_text"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/quantityEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Quantity"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/primary_text"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/unitSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/unit_array"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/primary_text" />
+
+        <Button
+            android:id="@+id/addGroceryItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/button_color"
+            android:textColor="@color/button_text" />
+    </LinearLayout>
+</LinearLayout>

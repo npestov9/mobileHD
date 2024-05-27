@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ben"
+        android:textSize="24sp"
+        android:textColor="@color/primary_text"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="instagramw7@gmail.com"
+        android:textSize="18sp"
+        android:textColor="@color/secondary_text"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/promptsUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prompts Used: 0"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/promptsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prompts Left: 0"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/buy10PromptsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Buy 10 Prompts ($5)"
+        android:textColor="@color/button_text" />
+
+    <Button
+        android:id="@+id/buy100PromptsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#83C635"
+        android:text="Buy 100 Prompts ($20)"
+        android:textColor="@color/button_text" />
+
+    <Button
+        android:id="@+id/buy1000PromptsButton"
+        android:layout_width="243dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#4CAF50"
+        android:text="Buy 1,000 Prompts ($50)"
+        android:textColor="@color/button_text" />
+
+</LinearLayout>

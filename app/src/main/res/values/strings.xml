@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CookAI</string>
+    <string-array name="unit_array">
+        <item>count</item>
+        <item>grams</item>
+    </string-array>
+
+</resources>
